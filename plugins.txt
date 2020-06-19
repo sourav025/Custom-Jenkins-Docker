@@ -1,0 +1,17 @@
+seed
+authorize-project
+git
+git-parameter
+github
+maven
+docker
+junit
+dashboard-view
+build-pipeline-plugin
+conditional-buildstep
+parameterized-trigger
+copyartifact
+rebuild
+timestamper
+htmlpublisher
+remote-file
