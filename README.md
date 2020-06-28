@@ -22,9 +22,23 @@ Have a loot at `scripts/security.groovy` file and update it as per your need.
 ## How to run
 Execute the below command to build the docker locally and run it.
 
+
+```
+docker run \
+	-d -p 8080:8080 \
+	-p 50000:50000 \
+	-v $HOME/jenkins_home:/var/jenkins_home \
+	-v $HOME/.m2:/var/.m2:z \
+	-v /var/run/docker.sock:/var/run/docker.sock \
+	--restart unless-stopped \
+	--name my_jenkins sourav025/jenkins
+```
+
+Optionally you can checkout the git repository and execute the command
 ```
 ./build.sh
 ```
+
 This may take few minutes to build and startup your brand new jenkins. Jenkins will be started on port 8080. Change `build.sh` to change it.
 
 In browser open `localhost:8080` and enter the admin credentials. You can **ignore** setting up the plugins cause it's already setup. Just start using jenkins.
