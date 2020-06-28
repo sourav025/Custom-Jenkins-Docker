@@ -17,7 +17,7 @@ String adminEmail = 'jenkins@souravs.me'
 JenkinsLocationConfiguration location = instance.getExtensionList('jenkins.model.JenkinsLocationConfiguration')[0]
  
 def hudsonRealm = new HudsonPrivateSecurityRealm(false)
-hudsonRealm.createAccount('jenkins', 'password')
+hudsonRealm.createAccount('admin', 'pass1234')
 instance.setSecurityRealm(hudsonRealm)
  
 def strategy = new FullControlOnceLoggedInAuthorizationStrategy()
