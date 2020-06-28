@@ -3,7 +3,7 @@ authorize-project
 git
 git-parameter
 github
-maven
+pipeline-maven
 junit
 dashboard-view
 build-pipeline-plugin
